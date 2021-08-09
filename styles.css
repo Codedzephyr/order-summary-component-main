@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,5 +6,207 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  background: #e0e8ff url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 12.8px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  width: 350px;
+  height: 550px;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url(./images/illustration-hero.svg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.caption-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.caption-container .caption {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.caption-container .caption .title {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.caption-container .caption .description {
+  text-align: center;
+  margin: 0px 22px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #7280a7;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.caption-container .caption .plan-container {
+  width: 90%;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 10vh;
+  background-color: #e0e8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.caption-container .caption .plan-container .plan {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.caption-container .caption .plan-container .plan .image-details-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caption-container .caption .plan-container .plan .content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.caption-container .caption .plan-container .plan .content .content1 {
+  margin: 10px 0px;
+}
+
+.caption-container .caption .plan-container .plan .content .content1 .title1 {
+  color: #1f2f56;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  padding: 2px 0px;
+}
+
+.caption-container .caption .plan-container .plan .content .content1 .description1 {
+  color: #7280a7;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.caption-container .caption .plan-container .change {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caption-container .caption .plan-container .change #text {
+  text-decoration: none;
+  color: #1f2f56;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.caption-container .caption .plan-container .change #text:hover {
+  color: #7280a7;
+}
+
+.caption-container .caption .button-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.caption-container .caption .button-container .button {
+  border: none;
+  background-color: #3829e0;
+  color: #f5f7ff;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.caption-container .caption .button-container .button:hover {
+  background-color: #7280a7;
+}
+
+.caption-container .caption .button-container .description2 {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: #7280a7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #e0e8ff url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

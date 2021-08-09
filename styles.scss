@@ -1,7 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+//Variables
+
+//Primary
+$paleblue: hsl(225, 100%, 94%);
+$brightblue: hsl(245, 75%, 52%);
+
+// Neutral
+$verypaleblue: hsl(225, 100%, 98%);
+$desaturatedblue: hsl(224, 23%, 55%);
+$darkblue: hsl(223, 47%, 23%);
+
+//font size
+$fontsize: 16px;
+
+//Typography
+$RedHatDisplay: "Red Hat Display", sans-serif;
+
+//font weight
+$fontweight500: 500;
+$fontweight700: 700;
+$fontweight900: 900;
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  background: $paleblue url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 12.8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 350px;
+  height: 550px;
+  background-color: $verypaleblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  flex: 1;
+  background: url(./images/illustration-hero.svg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.caption-container {
+  flex: 2;
+
+  .caption {
+    width: 90%;
+    margin: 0 auto;
+    .title {
+      text-align: center;
+      padding: 30px 0px 10px 0px;
+      font-family: $RedHatDisplay;
+      color: $darkblue;
+      font-weight: $fontweight900;
+    }
+
+    .description {
+      text-align: center;
+      margin: 0px 22px;
+      font-family: $RedHatDisplay;
+      color: $desaturatedblue;
+      font-size: $fontsize;
+      padding-bottom: 20px;
+    }
+
+    .plan-container {
+      width: 90%;
+      border-radius: 10px;
+      margin: 0 auto;
+      height: 10vh;
+      background-color: $paleblue;
+      display: flex;
+
+      .plan {
+        flex: 2;
+        display: flex;
+
+        .image-details-container {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .content {
+          flex: 2;
+
+          .content1 {
+            margin: 10px 0px;
+
+            .title1 {
+              color: $darkblue;
+              font-family: $RedHatDisplay;
+              font-weight: $fontweight700;
+              padding: 2px 0px;
+            }
+
+            .description1 {
+              color: $desaturatedblue;
+              font-family: $RedHatDisplay;
+            }
+          }
+        }
+      }
+
+      .change {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #text {
+          text-decoration: none;
+          color: $darkblue;
+          cursor: pointer;
+          font-family: $RedHatDisplay;
+          font-size: $fontsize;
+          font-weight: $fontweight700;
+        }
+
+        #text:hover {
+          color: $desaturatedblue;
+        }
+      }
+    }
+
+    .button-container {
+      width: 90%;
+      margin: 0 auto;
+      .button {
+        border: none;
+        background-color: $brightblue;
+        color: $verypaleblue;
+        font-size: $fontsize;
+        font-family: $RedHatDisplay;
+        font-weight: $fontweight700;
+        cursor: pointer;
+        text-align: center;
+        padding: 15px 20px;
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .button:hover {
+        background-color: $desaturatedblue;
+      }
+
+      .description2 {
+        text-align: center;
+        font-family: $RedHatDisplay;
+        font-size: $fontsize;
+        color: $desaturatedblue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: $paleblue url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+  }
 }
